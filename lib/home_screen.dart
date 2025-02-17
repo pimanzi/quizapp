@@ -31,10 +31,17 @@ class HomeScreen extends StatelessWidget {
             SizedBox(
               height: 30,
             ),
-            OutlinedButton(
+            OutlinedButton.icon(
               onPressed: () {},
-              style: OutlinedButton.styleFrom(foregroundColor: Colors.white),
-              child: Text("Start Quiz"),
+              style: OutlinedButton.styleFrom(
+                foregroundColor: Colors.white,
+              ),
+              icon: Icon(
+                Icons.arrow_right_alt,
+                size: 30,
+                color: Colors.white,
+              ),
+              label: Text("Start Quiz"),
             )
           ],
         ),
